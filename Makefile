@@ -31,15 +31,15 @@ obj-m	+= btusb.o
 
 obj-m	+= btintel.o
 obj-m	+= ath3k.o
-obj-m	+= btmrvl.o
+#obj-m	+= btmrvl.o
 #obj-m	+= btmrvl_sdio.o
 #obj-m	+= btwilink.o
 obj-m	+= btbcm.o
 obj-m	+= btrtl.o
 obj-m	+= btqca.o
 
-btmrvl-y	:= btmrvl_main.o
-btmrvl-m	+= btmrvl_debugfs.o
+#btmrvl-y	:= btmrvl_main.o
+#btmrvl-m	+= btmrvl_debugfs.o
 
 #hci_uart-y	:= hci_ldisc.o
 #hci_uart-m	+= hci_h4.o
