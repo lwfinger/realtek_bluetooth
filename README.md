@@ -17,3 +17,7 @@ make
 sudo make install
 
 Only firmware for the Realtek devices will be installed using this code.
+
+At the moment, only kernel 4.5 and newer will build. I plan to adapt to older
+kernels in the future.
+
