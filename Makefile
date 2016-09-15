@@ -16,24 +16,24 @@ endif
 
 ifneq ($(KERNELRELEASE),)
 
-obj-m	:= hci_vhci.o
-obj-m	+= hci_uart.o
-obj-m	+= bcm203x.o
-obj-m	+= bpa10x.o
-obj-m	+= bfusb.o
-obj-m	+= dtl1_cs.o
-obj-m	+= bt3c_cs.o
-obj-m	+= bluecard_cs.o
-obj-m	+= btuart_cs.o
+#obj-m	:= hci_vhci.o
+#obj-m	+= hci_uart.o
+#obj-m	+= bcm203x.o
+#obj-m	+= bpa10x.o
+#obj-m	+= bfusb.o
+#obj-m	+= dtl1_cs.o
+#obj-m	+= bt3c_cs.o
+#obj-m	+= bluecard_cs.o
+#obj-m	+= btuart_cs.o
 
 obj-m	+= btusb.o
-obj-m	+= btsdio.o
+#obj-m	+= btsdio.o
 
 obj-m	+= btintel.o
 obj-m	+= ath3k.o
 obj-m	+= btmrvl.o
-obj-m	+= btmrvl_sdio.o
-obj-m	+= btwilink.o
+#obj-m	+= btmrvl_sdio.o
+#obj-m	+= btwilink.o
 obj-m	+= btbcm.o
 obj-m	+= btrtl.o
 obj-m	+= btqca.o
@@ -41,17 +41,17 @@ obj-m	+= btqca.o
 btmrvl-y	:= btmrvl_main.o
 btmrvl-m	+= btmrvl_debugfs.o
 
-hci_uart-y	:= hci_ldisc.o
-hci_uart-m	+= hci_h4.o
-hci_uart-m	+= hci_bcsp.o
-hci_uart-m	+= hci_ll.o
-hci_uart-m	+= hci_ath.o
-hci_uart-m	+= hci_h5.o
-hci_uart-m	+= hci_intel.o
-hci_uart-m	+= hci_bcm.o
-hci_uart-m	+= hci_qca.o
-hci_uart-m	+= hci_ag6xx.o
-hci_uart-objs	:= $(hci_uart-y)
+#hci_uart-y	:= hci_ldisc.o
+#hci_uart-m	+= hci_h4.o
+#hci_uart-m	+= hci_bcsp.o
+#hci_uart-m	+= hci_ll.o
+#hci_uart-m	+= hci_ath.o
+#hci_uart-m	+= hci_h5.o
+#hci_uart-m	+= hci_intel.o
+#hci_uart-m	+= hci_bcm.o
+#hci_uart-m	+= hci_qca.o
+#hci_uart-m	+= hci_ag6xx.o
+#hci_uart-objs	:= $(hci_uart-y)
 
 else
 	PWD := $(shell pwd)

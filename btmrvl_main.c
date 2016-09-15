@@ -26,6 +26,7 @@
 
 #include "btmrvl_drv.h"
 #include "btmrvl_sdio.h"
+#include "bt_compat.h"
 
 #define VERSION "1.0"
 

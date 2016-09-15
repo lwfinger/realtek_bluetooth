@@ -32,6 +32,7 @@
 #include "btintel.h"
 #include "btbcm.h"
 #include "btrtl.h"
+#include "bt_compat.h"
 
 #define VERSION "0.8"
 
