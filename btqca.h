@@ -115,7 +115,7 @@ struct tlv_type_hdr {
 	__u8   data[0];
 } __packed;
 
-#if 1
+#if IS_ENABLED(CONFIG_BT_QCA)
 
 int qca_set_bdaddr_rome(struct hci_dev *hdev, const bdaddr_t *bdaddr);
 int qca_uart_setup_rome(struct hci_dev *hdev, uint8_t baudrate);

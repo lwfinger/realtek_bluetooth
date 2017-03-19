@@ -38,11 +38,6 @@ struct rtl_epatch_header {
 	__le16 num_patches;
 } __packed;
 
-struct lmp_subver {
-	__u16 lmp_subver;
-	__u8 id;
-};
-
 #if IS_ENABLED(CONFIG_BT_RTL)
 
 int btrtl_setup_realtek(struct hci_dev *hdev);
