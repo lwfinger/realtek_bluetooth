@@ -30,7 +30,7 @@ endif
 
 install:
 	@mkdir -p $(FW_DIR)
-	@cp -f *_fw.bin $(FW_DIR)/.
+	@cp -f firmware/*_fw.bin $(FW_DIR)/.
 	@cp -f *.ko $(DRV_DIR)/.
 ifeq ($(COMPRESS_GZIP), y)
 	@gzip -f $(DRV_DIR)/btusb.ko
