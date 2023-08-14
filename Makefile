@@ -14,7 +14,21 @@ endif
 
 ifneq ($(KERNELRELEASE),)
 
-	obj-m := btusb.o btrtl.o btintel.o btbcm.o
+obj-m := btusb.o btrtl.o btintel.o btbcm.o
+obj-m += hci_vhci.o
+obj-m += hci_uart.o
+hci_uart-m	:= hci_ldisc.o
+hci_uart-m	+= hci_serdev.o
+hci_uart-m	+= hci_h4.o
+hci_uart-m	+= hci_bcsp.o
+hci_uart-m	+= hci_ll.o
+hci_uart-m	+= hci_ath.o
+hci_uart-m	+= hci_h5.o
+hci_uart-m	+= hci_intel.o
+hci_uart-m	+= hci_bcm.o
+hci_uart-m	+= hci_qca.o
+hci_uart-m	+= hci_ag6xx.o
+hci_uart-m	+= hci_mrvl.o
 
 else
 	PWD := $(shell pwd)
